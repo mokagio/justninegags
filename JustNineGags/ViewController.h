@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SMWebRequest.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SMWebRequestDelegate>
 
 @property (nonatomic, strong) IBOutlet UILabel *gagTitle;
 @property (nonatomic, strong) UIImageView *gagImageView;
 @property (nonatomic, strong) IBOutlet UIButton *loadNewGagButton;
 
--(IBAction)loadNewGag:(id)sender;
+- (IBAction)loadNewGag:(id)sender;
 
 @end
