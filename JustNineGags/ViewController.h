@@ -10,4 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *gagTitle;
+@property (nonatomic, strong) UIImageView *gagImageView;
+@property (nonatomic, strong) IBOutlet UIButton *loadNewGagButton;
+
+-(IBAction)loadNewGag:(id)sender;
+
 @end
