@@ -18,7 +18,7 @@
 		3F410777168DC5DF00E5D12D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F410776168DC5DF00E5D12D /* Default-568h@2x.png */; };
 		3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410779168DC5DF00E5D12D /* ViewController.m */; };
 		3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F41077B168DC5DF00E5D12D /* ViewController.xib */; };
-		3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41078D168DE3D400E5D12D /* SMWebRequest.m */; };
+		3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41078D168DE3D400E5D12D /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B7C93B918BED4FE48FA15539 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C1B32465564FF492A11C8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
