@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F410761168DC5DF00E5D12D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F410760168DC5DF00E5D12D /* UIKit.framework */; };
+		3F410763168DC5DF00E5D12D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F410762168DC5DF00E5D12D /* Foundation.framework */; };
+		3F410765168DC5DF00E5D12D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F410764168DC5DF00E5D12D /* CoreGraphics.framework */; };
+		3F41076B168DC5DF00E5D12D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F410769168DC5DF00E5D12D /* InfoPlist.strings */; };
+		3F41076D168DC5DF00E5D12D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41076C168DC5DF00E5D12D /* main.m */; };
+		3F410771168DC5DF00E5D12D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410770168DC5DF00E5D12D /* AppDelegate.m */; };
+		3F410773168DC5DF00E5D12D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F410772168DC5DF00E5D12D /* Default.png */; };
+		3F410775168DC5DF00E5D12D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F410774168DC5DF00E5D12D /* Default@2x.png */; };
+		3F410777168DC5DF00E5D12D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F410776168DC5DF00E5D12D /* Default-568h@2x.png */; };
+		3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410779168DC5DF00E5D12D /* ViewController.m */; };
+		3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F41077B168DC5DF00E5D12D /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F41075C168DC5DF00E5D12D /* JustNineGags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustNineGags.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F410760168DC5DF00E5D12D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F410762168DC5DF00E5D12D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F410764168DC5DF00E5D12D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F410768168DC5DF00E5D12D /* JustNineGags-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JustNineGags-Info.plist"; sourceTree = "<group>"; };
+		3F41076A168DC5DF00E5D12D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F41076C168DC5DF00E5D12D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F41076E168DC5DF00E5D12D /* JustNineGags-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JustNineGags-Prefix.pch"; sourceTree = "<group>"; };
+		3F41076F168DC5DF00E5D12D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F410770168DC5DF00E5D12D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F410772168DC5DF00E5D12D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3F410774168DC5DF00E5D12D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3F410776168DC5DF00E5D12D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3F410778168DC5DF00E5D12D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F410779168DC5DF00E5D12D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F41077C168DC5DF00E5D12D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F410759168DC5DF00E5D12D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F410761168DC5DF00E5D12D /* UIKit.framework in Frameworks */,
+				3F410763168DC5DF00E5D12D /* Foundation.framework in Frameworks */,
+				3F410765168DC5DF00E5D12D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F410751168DC5DF00E5D12D = {
+			isa = PBXGroup;
+			children = (
+				3F410766168DC5DF00E5D12D /* JustNineGags */,
+				3F41075F168DC5DF00E5D12D /* Frameworks */,
+				3F41075D168DC5DF00E5D12D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F41075D168DC5DF00E5D12D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F41075C168DC5DF00E5D12D /* JustNineGags.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F41075F168DC5DF00E5D12D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F410760168DC5DF00E5D12D /* UIKit.framework */,
+				3F410762168DC5DF00E5D12D /* Foundation.framework */,
+				3F410764168DC5DF00E5D12D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F410766168DC5DF00E5D12D /* JustNineGags */ = {
+			isa = PBXGroup;
+			children = (
+				3F41076F168DC5DF00E5D12D /* AppDelegate.h */,
+				3F410770168DC5DF00E5D12D /* AppDelegate.m */,
+				3F410778168DC5DF00E5D12D /* ViewController.h */,
+				3F410779168DC5DF00E5D12D /* ViewController.m */,
+				3F41077B168DC5DF00E5D12D /* ViewController.xib */,
+				3F410767168DC5DF00E5D12D /* Supporting Files */,
+			);
+			path = JustNineGags;
+			sourceTree = "<group>";
+		};
+		3F410767168DC5DF00E5D12D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F410768168DC5DF00E5D12D /* JustNineGags-Info.plist */,
+				3F410769168DC5DF00E5D12D /* InfoPlist.strings */,
+				3F41076C168DC5DF00E5D12D /* main.m */,
+				3F41076E168DC5DF00E5D12D /* JustNineGags-Prefix.pch */,
+				3F410772168DC5DF00E5D12D /* Default.png */,
+				3F410774168DC5DF00E5D12D /* Default@2x.png */,
+				3F410776168DC5DF00E5D12D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F41075B168DC5DF00E5D12D /* JustNineGags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F410780168DC5DF00E5D12D /* Build configuration list for PBXNativeTarget "JustNineGags" */;
+			buildPhases = (
+				3F410758168DC5DF00E5D12D /* Sources */,
+				3F410759168DC5DF00E5D12D /* Frameworks */,
+				3F41075A168DC5DF00E5D12D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustNineGags;
+			productName = JustNineGags;
+			productReference = 3F41075C168DC5DF00E5D12D /* JustNineGags.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F410753168DC5DF00E5D12D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = mokagio;
+			};
+			buildConfigurationList = 3F410756168DC5DF00E5D12D /* Build configuration list for PBXProject "JustNineGags" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F410751168DC5DF00E5D12D;
+			productRefGroup = 3F41075D168DC5DF00E5D12D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F41075B168DC5DF00E5D12D /* JustNineGags */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F41075A168DC5DF00E5D12D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F41076B168DC5DF00E5D12D /* InfoPlist.strings in Resources */,
+				3F410773168DC5DF00E5D12D /* Default.png in Resources */,
+				3F410775168DC5DF00E5D12D /* Default@2x.png in Resources */,
+				3F410777168DC5DF00E5D12D /* Default-568h@2x.png in Resources */,
+				3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F410758168DC5DF00E5D12D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F41076D168DC5DF00E5D12D /* main.m in Sources */,
+				3F410771168DC5DF00E5D12D /* AppDelegate.m in Sources */,
+				3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F410769168DC5DF00E5D12D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F41076A168DC5DF00E5D12D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F41077B168DC5DF00E5D12D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F41077C168DC5DF00E5D12D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F41077E168DC5DF00E5D12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F41077F168DC5DF00E5D12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F410781168DC5DF00E5D12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JustNineGags/JustNineGags-Prefix.pch";
+				INFOPLIST_FILE = "JustNineGags/JustNineGags-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F410782168DC5DF00E5D12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JustNineGags/JustNineGags-Prefix.pch";
+				INFOPLIST_FILE = "JustNineGags/JustNineGags-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F410756168DC5DF00E5D12D /* Build configuration list for PBXProject "JustNineGags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F41077E168DC5DF00E5D12D /* Debug */,
+				3F41077F168DC5DF00E5D12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F410780168DC5DF00E5D12D /* Build configuration list for PBXNativeTarget "JustNineGags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F410781168DC5DF00E5D12D /* Debug */,
+				3F410782168DC5DF00E5D12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F410753168DC5DF00E5D12D /* Project object */;
+}
