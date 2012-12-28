@@ -19,6 +19,7 @@
 		3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410779168DC5DF00E5D12D /* ViewController.m */; };
 		3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F41077B168DC5DF00E5D12D /* ViewController.xib */; };
 		3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41078D168DE3D400E5D12D /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F410791168DFE7F00E5D12D /* Gag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410790168DFE7F00E5D12D /* Gag.m */; };
 		B7C93B918BED4FE48FA15539 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C1B32465564FF492A11C8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,8 @@
 		3F41077C168DC5DF00E5D12D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		3F41078C168DE3D400E5D12D /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
 		3F41078D168DE3D400E5D12D /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
+		3F41078F168DFE7F00E5D12D /* Gag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gag.h; sourceTree = "<group>"; };
+		3F410790168DFE7F00E5D12D /* Gag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gag.m; sourceTree = "<group>"; };
 		C0C1B32465564FF492A11C8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +102,8 @@
 				3F410779168DC5DF00E5D12D /* ViewController.m */,
 				3F41077B168DC5DF00E5D12D /* ViewController.xib */,
 				3F410767168DC5DF00E5D12D /* Supporting Files */,
+				3F41078F168DFE7F00E5D12D /* Gag.h */,
+				3F410790168DFE7F00E5D12D /* Gag.m */,
 			);
 			path = JustNineGags;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				3F410771168DC5DF00E5D12D /* AppDelegate.m in Sources */,
 				3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */,
 				3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */,
+				3F410791168DFE7F00E5D12D /* Gag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
