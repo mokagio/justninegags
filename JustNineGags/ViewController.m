@@ -10,8 +10,15 @@
 #import <MBProgressHUD.h>
 
 @interface ViewController ()
+
+@property (nonatomic, strong) MBProgressHUD *downloadingHUD;
+
+- (void)showDownloadingHUD;
+- (void)hideDownliadingHUD;
+
 - (void)downloadHotPage;
 - (void)downloadComplete:(NSArray *)gags;
+
 @end
 
 @implementation ViewController
@@ -31,6 +38,8 @@
 
 - (void)downloadHotPage
 {
+    [self showDownloadingHUD];
+    
     NSURL *url = [NSURL URLWithString:@"http://infinigag.appspot.com/?section=hot"];
     SMWebRequest *request = [SMWebRequest requestWithURL:url delegate:self context:nil];
     [request addTarget:self action:@selector(downloadComplete:) forRequestEvents:SMWebRequestEventComplete];
@@ -40,6 +49,19 @@
 - (void)downloadComplete:(NSArray *)gags
 {
     NSLog(@"found %d gags", [gags count]);
+    
+    [self hideDownliadingHUD];
+}
+
+- (void)showDownloadingHUD
+{
+    self.downloadingHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.downloadingHUD.mode = MBProgressHUDModeIndeterminate;
+    self.downloadingHUD.labelText = @"Downloading...";
+}
+- (void)hideDownliadingHUD
+{
+    [self.downloadingHUD hide:YES];
 }
 
 #pragma mark - UI handleres
