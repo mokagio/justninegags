@@ -12,7 +12,7 @@
 @interface ViewController : UIViewController <SMWebRequestDelegate>
 
 @property (nonatomic, strong) IBOutlet UILabel *gagTitle;
-@property (nonatomic, strong) UIImageView *gagImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *gagImageView;
 @property (nonatomic, strong) IBOutlet UIButton *loadNewGagButton;
 
 - (IBAction)loadNewGag:(id)sender;

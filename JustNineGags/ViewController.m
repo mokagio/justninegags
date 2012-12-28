@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MBProgressHUD.h>
+#import "Gag.h"
 
 @interface ViewController ()
 
@@ -49,6 +50,11 @@
 - (void)downloadComplete:(NSArray *)gags
 {
     NSLog(@"found %d gags", [gags count]);
+    
+    Gag *gag = [[Gag alloc] initWithDictionary:[gags objectAtIndex:0]];
+    
+    [self.gagTitle setText:gag.title];
+    [self.gagImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:gag.imageURL]]];
     
     [self hideDownliadingHUD];
 }
