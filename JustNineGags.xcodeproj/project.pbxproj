@@ -18,9 +18,12 @@
 		3F410777168DC5DF00E5D12D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F410776168DC5DF00E5D12D /* Default-568h@2x.png */; };
 		3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410779168DC5DF00E5D12D /* ViewController.m */; };
 		3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F41077B168DC5DF00E5D12D /* ViewController.xib */; };
+		3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41078D168DE3D400E5D12D /* SMWebRequest.m */; };
+		B7C93B918BED4FE48FA15539 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C1B32465564FF492A11C8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5E15870683418DB329E934 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		3F41075C168DC5DF00E5D12D /* JustNineGags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustNineGags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F410760168DC5DF00E5D12D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F410762168DC5DF00E5D12D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +40,9 @@
 		3F410778168DC5DF00E5D12D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F410779168DC5DF00E5D12D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3F41077C168DC5DF00E5D12D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3F41078C168DE3D400E5D12D /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
+		3F41078D168DE3D400E5D12D /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
+		C0C1B32465564FF492A11C8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 				3F410761168DC5DF00E5D12D /* UIKit.framework in Frameworks */,
 				3F410763168DC5DF00E5D12D /* Foundation.framework in Frameworks */,
 				3F410765168DC5DF00E5D12D /* CoreGraphics.framework in Frameworks */,
+				B7C93B918BED4FE48FA15539 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 				3F410766168DC5DF00E5D12D /* JustNineGags */,
 				3F41075F168DC5DF00E5D12D /* Frameworks */,
 				3F41075D168DC5DF00E5D12D /* Products */,
+				0C5E15870683418DB329E934 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +81,11 @@
 		3F41075F168DC5DF00E5D12D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F41078A168DE3C000E5D12D /* webrequest */,
 				3F410760168DC5DF00E5D12D /* UIKit.framework */,
 				3F410762168DC5DF00E5D12D /* Foundation.framework */,
 				3F410764168DC5DF00E5D12D /* CoreGraphics.framework */,
+				C0C1B32465564FF492A11C8C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +117,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3F41078A168DE3C000E5D12D /* webrequest */ = {
+			isa = PBXGroup;
+			children = (
+				3F41078C168DE3D400E5D12D /* SMWebRequest.h */,
+				3F41078D168DE3D400E5D12D /* SMWebRequest.m */,
+			);
+			path = webrequest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +136,7 @@
 				3F410758168DC5DF00E5D12D /* Sources */,
 				3F410759168DC5DF00E5D12D /* Frameworks */,
 				3F41075A168DC5DF00E5D12D /* Resources */,
+				5FAB87AF3C444C77B04EA564 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +188,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FAB87AF3C444C77B04EA564 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F410758168DC5DF00E5D12D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,6 +213,7 @@
 				3F41076D168DC5DF00E5D12D /* main.m in Sources */,
 				3F410771168DC5DF00E5D12D /* AppDelegate.m in Sources */,
 				3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */,
+				3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +291,7 @@
 		};
 		3F410781168DC5DF00E5D12D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5E15870683418DB329E934 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JustNineGags/JustNineGags-Prefix.pch";
@@ -264,6 +303,7 @@
 		};
 		3F410782168DC5DF00E5D12D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5E15870683418DB329E934 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JustNineGags/JustNineGags-Prefix.pch";
@@ -292,6 +332,7 @@
 				3F410782168DC5DF00E5D12D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
