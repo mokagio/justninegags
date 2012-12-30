@@ -13,6 +13,8 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) MBProgressHUD *downloadingHUD;
+@property (nonatomic, assign) NSUInteger currentGagIndex;
+@property (nonatomic, strong) NSArray *gags;
 
 - (void)showDownloadingHUD;
 - (void)hideDownliadingHUD;
@@ -20,9 +22,24 @@
 - (void)downloadHotPage;
 - (void)downloadComplete:(NSArray *)gags;
 
+- (void)loadGagAtIndex:(NSUInteger)index;
+
+- (BOOL)canGetNewGas;
+
 @end
 
 @implementation ViewController
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.downloadingHUD = nil;
+        self.currentGagIndex = 0;
+        self.gags = nil;
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -51,10 +68,10 @@
 {
     NSLog(@"found %d gags", [gags count]);
     
-    Gag *gag = [[Gag alloc] initWithDictionary:[gags objectAtIndex:0]];
+    // TODO check for 9 gags!
+    self.gags = gags;
     
-    [self.gagTitle setText:gag.title];
-    [self.gagImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:gag.imageURL]]];
+    [self loadGagAtIndex:self.currentGagIndex];
     
     [self hideDownliadingHUD];
 }
@@ -65,16 +82,36 @@
     self.downloadingHUD.mode = MBProgressHUDModeIndeterminate;
     self.downloadingHUD.labelText = @"Downloading...";
 }
+
 - (void)hideDownliadingHUD
 {
     [self.downloadingHUD hide:YES];
+}
+
+- (void)loadGagAtIndex:(NSUInteger)index
+{
+    Gag *gag = [[Gag alloc] initWithDictionary:[self.gags objectAtIndex:index]];
+    
+    [self.gagTitle setText:gag.title];
+    [self.gagImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:gag.imageURL]]];
+}
+
+- (BOOL)canGetNewGas
+{
+    // DUMMY
+    return YES;
 }
 
 #pragma mark - UI handleres
 
 - (IBAction)loadNewGag:(id)sender
 {
-    NSLog(@"will load new gag");
+    if (self.currentGagIndex < 9) {
+        self.currentGagIndex++;
+        [self loadGagAtIndex:self.currentGagIndex];
+    } else {
+        NSLog(@"will show no more gag for you lazy procrastinator message");
+    }
 }
 
 #pragma mark - SMWebRequestDelegate
