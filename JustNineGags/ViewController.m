@@ -24,6 +24,8 @@
 
 - (void)loadGagAtIndex:(NSUInteger)index;
 
+- (void)showNoMoreCatsMessage;
+
 - (BOOL)canGetNewGas;
 
 @end
@@ -88,6 +90,16 @@
     [self.downloadingHUD hide:YES];
 }
 
+- (void)showNoMoreCatsMessage
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NO MORE GAGS"
+                                                    message:@"No more gags for you lazy procrastinator.\nCome back in one hour"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
 - (void)loadGagAtIndex:(NSUInteger)index
 {
     Gag *gag = [[Gag alloc] initWithDictionary:[self.gags objectAtIndex:index]];
@@ -106,11 +118,12 @@
 
 - (IBAction)loadNewGag:(id)sender
 {
-    if (self.currentGagIndex < 9) {
-        self.currentGagIndex++;
+    self.currentGagIndex++;
+    
+    if (self.currentGagIndex < [self.gags count] && self.currentGagIndex < 9) {
         [self loadGagAtIndex:self.currentGagIndex];
     } else {
-        NSLog(@"will show no more gag for you lazy procrastinator message");
+        [self showNoMoreCatsMessage];
     }
 }
 
