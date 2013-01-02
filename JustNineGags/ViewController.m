@@ -10,6 +10,8 @@
 #import <MBProgressHUD.h>
 #import "Gag.h"
 
+static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
+
 @interface ViewController ()
 
 @property (nonatomic, strong) MBProgressHUD *downloadingHUD;
@@ -27,6 +29,10 @@
 - (void)showNoMoreCatsMessage;
 
 - (BOOL)canGetNewGas;
+
+- (BOOL)hasOneHourPassed;
+- (void)updateTime;
+- (NSString *)timestampFilePath;
 
 @end
 
@@ -47,7 +53,12 @@
 {
     [super viewDidLoad];
     
-    [self downloadHotPage];
+    if ([self canGetNewGas]) {
+        [self downloadHotPage];
+        [self updateTime];
+    } else {
+        [self showNoMoreCatsMessage];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,7 +104,7 @@
 - (void)showNoMoreCatsMessage
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NO MORE GAGS"
-                                                    message:@"No more gags for you lazy procrastinator.\nCome back in one hour"
+                                                    message:@"No more gags for you lazy procrastinator.\nCome back in a while"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
@@ -110,8 +121,43 @@
 
 - (BOOL)canGetNewGas
 {
-    // DUMMY
-    return YES;
+    return [self hasOneHourPassed];
+}
+
+#pragma mark - Data persistance
+
+- (BOOL)hasOneHourPassed
+{
+    NSString *filePath = [self timestampFilePath];
+
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        
+        NSDictionary *timeDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+        NSTimeInterval lastTimestamp = [[timeDict objectForKey:@"timestamp"] floatValue];
+        
+        if ([[NSDate date] timeIntervalSince1970] - lastTimestamp >= 3600) {
+            return YES;
+        } else {
+            return NO;
+        }
+    } else {
+        return YES;
+    }
+}
+
+- (void)updateTime
+{
+    NSDictionary *timeDict = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:[[NSDate date] timeIntervalSince1970]] forKey:@"timestamp"];
+    [timeDict writeToFile:[self timestampFilePath] atomically:YES];
+}
+
+- (NSString *)timestampFilePath
+{
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                              NSUserDomainMask, YES) lastObject];
+    NSString *filePath = [rootPath stringByAppendingPathComponent:TIMESTAMP_FILE_NAME];
+    
+    return filePath;
 }
 
 #pragma mark - UI handleres
