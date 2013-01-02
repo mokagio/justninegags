@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MBProgressHUD.h>
+#import <Reachability.h>
 #import "Gag.h"
 
 static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
@@ -53,11 +54,23 @@ static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
 {
     [super viewDidLoad];
     
-    if ([self canGetNewGas]) {
-        [self downloadHotPage];
-        [self updateTime];
+    Reachability *reachable = [Reachability reachabilityForInternetConnection];
+    
+    if ([reachable isReachable]) {
+        if ([self canGetNewGas]) {
+            [self downloadHotPage];
+            [self updateTime];
+        } else {
+            [self showNoMoreCatsMessage];
+        }
+
     } else {
-        [self showNoMoreCatsMessage];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NO CONNECTION"
+                                                        message:@"There's not internet connection...\nHow am I supposed to get your gets without connection?!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"SORRY"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
 }
 
