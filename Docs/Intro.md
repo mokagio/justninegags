@@ -1,13 +1,13 @@
 ### The point of this project
 
 The point of this project is to **learn** some stuff, mainly how to use [CocoaPods](http://cocoapods.org/).
-We're gonna build a 9GAG client that only shows us 9 gags every hour, so we're not going to get caught in the time wasting vortex, but we'll still get hour healthy laughs.
+We're gonna build a [9GAG](http://9gag.com) client that only shows us 9 gags every hour, so we're not going to get caught in the time wasting vortex, but we'll still get hour healthy laughs.
 
 ### What's CocoaPods
 
 > CocoaPods: The best way to manage library dependencies in Objective-C projects.
 
-If you're familiar with Ruby on Rails, it's the same thing as [Bundler](http://gembundler.com/), or it's lame copy attempt for Symfony 2, [Compose](http://getcomposer.org/).
+If you're familiar with Ruby on Rails, it's the same thing as [Bundler](http://gembundler.com/), or it's lame copy attempt for Symfony 2, [Composer](http://getcomposer.org/).
 
 If you're not, and you haven't sorted it out from the quote above, CocoaPods is a tool that's let us manage our libraries and their dependencies in our Objective-C projects. This means:
 
