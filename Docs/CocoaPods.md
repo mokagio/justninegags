@@ -6,8 +6,8 @@
 
 Installing CocoaPods is as simple as installing all the other Ruby Gems, I shouldn't even writing this, as what's written in the [install section](http://cocoapods.org/#install) is more than enough, anyway:
 
-    [sudo] gem install cocoapods
-    
+    gem install cocoapods
+
 Once the installation is completed run:
 
     pod setup
@@ -20,6 +20,8 @@ This will, guess what, setup everything CocoaPods needs on your system. You shou
         
 Done! :)
 
+_You should avoid using_ `sudo` _otherwise everything else you'll do with_ `pod` _will need to use_ `sudo` _as well. And this mean that the folders and file that are gonna be created will be owend by_ `root` _instead that by you._
+
 ### 2. Using CocoaPods
 
 Again, everything written on the [website](http://cocoapods.org/#get_started) is pretty straightforward.
@@ -30,11 +32,11 @@ Go in the root folder of your Objective-C project and create a file named `Podfi
     pod 'MBProgressHUD', '~> 0.5'
     pod 'Reachability',  '~> 3.1.0'
     
-### 2.1 Adding a Pod
+#### 2.1 Adding a Pod
 
 As you can see adding a Pod is really easy, just go on [CocoaPods website](http://cocoapods.org), look for the it, and then add it to the `Podfile` using it's name and the version you need.
 
-### 2.2 Installing the Pods
+#### 2.2 Installing the Pods
 
 Right now we've told CocoaPods the Pods we need but they aren't yet in out project. So let's run
 
@@ -47,3 +49,8 @@ The first time we run `pod install` something else will happen, a `Pod/` folder,
 **Important!** From now on remember to open your project through the `YourProjectName.xcworkspace` file, otherwise the pods won't be loaded by Xcode.
 
 That's all folks! :)
+
+### 3. What's coming next?
+
+* How to setup our own pods
+* What to add to the `.gitignore`
