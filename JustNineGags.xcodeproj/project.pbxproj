@@ -20,6 +20,8 @@
 		3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F41077B168DC5DF00E5D12D /* ViewController.xib */; };
 		3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41078D168DE3D400E5D12D /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3F410791168DFE7F00E5D12D /* Gag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410790168DFE7F00E5D12D /* Gag.m */; };
+		3F4688AB169887EC00896BA9 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4688A9169887EC00896BA9 /* arrow_right.png */; };
+		3F4688AC169887EC00896BA9 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4688AA169887EC00896BA9 /* arrow_right@2x.png */; };
 		B7C93B918BED4FE48FA15539 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C1B32465564FF492A11C8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		3F41078D168DE3D400E5D12D /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
 		3F41078F168DFE7F00E5D12D /* Gag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gag.h; sourceTree = "<group>"; };
 		3F410790168DFE7F00E5D12D /* Gag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gag.m; sourceTree = "<group>"; };
+		3F4688A9169887EC00896BA9 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
+		3F4688AA169887EC00896BA9 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		C0C1B32465564FF492A11C8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +108,8 @@
 				3F410767168DC5DF00E5D12D /* Supporting Files */,
 				3F41078F168DFE7F00E5D12D /* Gag.h */,
 				3F410790168DFE7F00E5D12D /* Gag.m */,
+				3F4688A9169887EC00896BA9 /* arrow_right.png */,
+				3F4688AA169887EC00896BA9 /* arrow_right@2x.png */,
 			);
 			path = JustNineGags;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				3F410775168DC5DF00E5D12D /* Default@2x.png in Resources */,
 				3F410777168DC5DF00E5D12D /* Default-568h@2x.png in Resources */,
 				3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */,
+				3F4688AB169887EC00896BA9 /* arrow_right.png in Resources */,
+				3F4688AC169887EC00896BA9 /* arrow_right@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
