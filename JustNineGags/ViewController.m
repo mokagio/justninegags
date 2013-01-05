@@ -134,6 +134,9 @@ static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
 
 - (BOOL)canGetNewGas
 {
+#ifdef DEVELOPMENT
+    return true;
+#endif
     return [self hasOneHourPassed];
 }
 
