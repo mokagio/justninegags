@@ -13,4 +13,4 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define DEVELOPMENT 1
+//#define DEVELOPMENT 1

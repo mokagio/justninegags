@@ -12,6 +12,8 @@
 #import "Gag.h"
 
 static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
+static NSString *const FALLBACK_IMAGE_NAME = @"fallback";
+static NSString *const FALLBACK_IMAGE_EXTENSION = @"jpg";
 
 @interface ViewController ()
 
@@ -26,6 +28,7 @@ static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
 - (void)downloadComplete:(NSArray *)gags;
 
 - (void)loadGagAtIndex:(NSUInteger)index;
+- (void)loadFallbackImage;
 
 - (void)showNoMoreCatsMessage;
 
@@ -61,6 +64,8 @@ static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
             [self downloadHotPage];
             [self updateTime];
         } else {
+            [self loadFallbackImage];
+            [self.loadNewGagButton removeFromSuperview];
             [self showNoMoreCatsMessage];
         }
 
@@ -132,6 +137,12 @@ static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
     [self.gagImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:gag.imageURL]]];
 }
 
+- (void)loadFallbackImage
+{
+    UIImage *fallbackImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:FALLBACK_IMAGE_NAME ofType:FALLBACK_IMAGE_EXTENSION]];
+    [self.gagImageView setImage:fallbackImage];
+}
+
 - (BOOL)canGetNewGas
 {
 #ifdef DEVELOPMENT
@@ -185,6 +196,8 @@ static NSString *const TIMESTAMP_FILE_NAME = @"timestamp.plist";
     if (self.currentGagIndex < [self.gags count] && self.currentGagIndex < 9) {
         [self loadGagAtIndex:self.currentGagIndex];
     } else {
+        [self loadFallbackImage];
+        [self.loadNewGagButton removeFromSuperview];
         [self showNoMoreCatsMessage];
     }
 }
