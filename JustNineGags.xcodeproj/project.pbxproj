@@ -18,7 +18,6 @@
 		3F410777168DC5DF00E5D12D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F410776168DC5DF00E5D12D /* Default-568h@2x.png */; };
 		3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410779168DC5DF00E5D12D /* ViewController.m */; };
 		3F41077D168DC5DF00E5D12D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F41077B168DC5DF00E5D12D /* ViewController.xib */; };
-		3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41078D168DE3D400E5D12D /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3F410791168DFE7F00E5D12D /* Gag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F410790168DFE7F00E5D12D /* Gag.m */; };
 		3F4688AB169887EC00896BA9 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4688A9169887EC00896BA9 /* arrow_right.png */; };
 		3F4688AC169887EC00896BA9 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4688AA169887EC00896BA9 /* arrow_right@2x.png */; };
@@ -44,8 +43,6 @@
 		3F410778168DC5DF00E5D12D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F410779168DC5DF00E5D12D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3F41077C168DC5DF00E5D12D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		3F41078C168DE3D400E5D12D /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
-		3F41078D168DE3D400E5D12D /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
 		3F41078F168DFE7F00E5D12D /* Gag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gag.h; sourceTree = "<group>"; };
 		3F410790168DFE7F00E5D12D /* Gag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gag.m; sourceTree = "<group>"; };
 		3F4688A9169887EC00896BA9 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
@@ -90,7 +87,6 @@
 		3F41075F168DC5DF00E5D12D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F41078A168DE3C000E5D12D /* webrequest */,
 				3F410760168DC5DF00E5D12D /* UIKit.framework */,
 				3F410762168DC5DF00E5D12D /* Foundation.framework */,
 				3F410764168DC5DF00E5D12D /* CoreGraphics.framework */,
@@ -129,15 +125,6 @@
 				3F410776168DC5DF00E5D12D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3F41078A168DE3C000E5D12D /* webrequest */ = {
-			isa = PBXGroup;
-			children = (
-				3F41078C168DE3D400E5D12D /* SMWebRequest.h */,
-				3F41078D168DE3D400E5D12D /* SMWebRequest.m */,
-			);
-			path = webrequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +217,6 @@
 				3F41076D168DC5DF00E5D12D /* main.m in Sources */,
 				3F410771168DC5DF00E5D12D /* AppDelegate.m in Sources */,
 				3F41077A168DC5DF00E5D12D /* ViewController.m in Sources */,
-				3F41078E168DE3D400E5D12D /* SMWebRequest.m in Sources */,
 				3F410791168DFE7F00E5D12D /* Gag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

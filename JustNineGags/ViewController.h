@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SMWebRequest.h"
+#import <SMWebRequest.h>
 
 @interface ViewController : UIViewController <SMWebRequestDelegate>
 

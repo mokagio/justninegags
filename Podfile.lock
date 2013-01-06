@@ -2,13 +2,16 @@
 PODS:
 - MBProgressHUD (0.5)
 - Reachability (3.1.0)
+- SMWebRequest (1.0)
 
 DEPENDENCIES:
 - MBProgressHUD (~> 0.5)
 - Reachability (~> 3.1.0)
+- SMWebRequest (~> 1.0)
 
 SPEC CHECKSUMS:
   MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
   Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
+  SMWebRequest: ac887708fa6ea14d28213d333bc1baa11b85d7b5
 
 COCOAPODS: 0.16.0
