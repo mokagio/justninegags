@@ -4,4 +4,6 @@ A simple 9GAG feed reader, that shows only 9 gags every hour, so we're not going
 
 I made this project because I wanted to learn how to use [CocoaPods](http://cocoapods.org/), and I don't like tutorials that doesn't build something useful and with more creativity than _"a table with a list of cities"_.
 
+I wrote a [small blog post](http://amokafullofstuff.wordpress.com/2013/01/05/cocoapods/) about what I learned.
+
 Enjoy and please send feedbacks.
